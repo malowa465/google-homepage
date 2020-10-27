@@ -1,63 +1,30 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=">
-  <script src="https://kit.fontawesome.com/3926abc82e.js" crossorigin="anonymous"></script>
-  </head>
-  <title>Google</title>
+    <meta charset="utf-8">
+    <title>Google Search Page Recreation</title>
+    <link rel="stylesheet" href="/home/brian/Documents/the_odin_project/google-homepage/main.css">
 </head>
 <body>
-  <header>
-    <nav class="left-nav">
-      <ul>
-        <a href="#" class="left-nav-item">About</a>
-        <a href="#" class="left-nav-item">Store</a>
-      </ul>
-    </nav>
-    
-    <nav class="right-nav">
-      <ul>
-        <a href="#" class="right-nav-item">Gmail</a>
-        <a href="#" class="right-nav-item">Images</a>
-        <a href="#" class="right-nav-item"><i class="fas fa-th"></i></a>
-        <a href="#" class="right-nav-item sign-in">Sign In</a>
-      </ul>
-    </nav>
-  </header>
-  
-  <main>
-    <section id="search">
-      <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
-      <form action="#">
-        <input type="text" name="search">
-        <div>
-        <button>Google Search</button>
-        <button>Im Feeling Lucky</button>
-        </div>
-      </form>
-      <p><a href="#">Watch the 2020 Presidential Debate.</a> Tonight on YouTube at 9pm ET
-</p>
-    </section>
-  </main>
-  
-  <footer>
-    <nav class="left-nav bottom-nav">
-      <ul>
-        <a href="#" class="left-nav-item">Advertising</a>
-        <a href="#" class="left-nav-item">Business</a>
-        <a href="#" class="left-nav-item">About</a>
-        <a href="#" class="left-nav-item">How Search Works</a>
-      </ul>
-    </nav>
-    
-    <nav class="right-nav bottom-nav">
-      <ul>
-        <a href="#" class="right-nav-item">Privacy</a>
-        <a href="#" class="right-nav-item">Terms</a>
-        <a href="#" class="right-nav-item">Settings</a>
-      </ul>
-    </nav>
-  </footer>
-  
+    <ul id="navbar">
+        <li>Store</li>
+        <li>Gmail</li>
+        <li>Images</li>
+        <li><button id="sign-in-button">Sign In</button></li>
+    </ul>
+    <div id="title-search">
+        <img id="larger-image" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        <form>
+            <input id="search" type="text" placeholder="Search Google or type a URL"><br>
+            <button class="search-button" type="">Google Search</button>
+            <button class="search-button" type="">I'm Feeling Lucky</button>
+
+
+            <label for="fname">First name:</label><br>
+           <input type="text" id="fname" name="fname"><br>
+           <label for="lname">Last name:</label><br>
+           <input type="text" id="lname" name="lname">
+        </form>
+    </div>
 </body>
 </html>
